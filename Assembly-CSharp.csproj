@@ -47,11 +47,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlacementController.cs" />
      <Compile Include="Assets\Scripts\PlacementObject.cs" />
+     <Compile Include="Assets\Scripts\TrackedImageInfoManager.cs" />
  <Reference Include="Unity.XR.Management">
  <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit">
+ <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
  <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
@@ -98,14 +102,11 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.XR.ARKit">
- <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
- </Reference>
  <Reference Include="Unity.XR.ARKit.Editor">
  <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/Vincent/Documents/GitHub/homocolossus/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
