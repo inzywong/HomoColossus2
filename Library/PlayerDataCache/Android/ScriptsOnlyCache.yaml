@@ -2,7 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - PlacementController
-    - PlacementObject
+    - ToggleInformation
     - TrackedImageInfoManager
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
@@ -20,13 +20,19 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
     - UnityEngine.XR.ARFoundation.ARTrackedImageManager
-    Unity.XR.ARSubsystems.Editor.dll:
-    - UnityEditor.XR.ARSubsystems.XRReferenceImageLibraryEditor
     Unity.XR.ARSubsystems.dll:
     - UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Homocolossus.unity:
     - Class: 1
@@ -58,56 +64,78 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11170}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11174}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 12096}
+      Script: {instanceID: 11438}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 11890}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12100}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 13034}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 12676}
     - Class: 114
-      Script: {instanceID: 13214}
+      Script: {instanceID: 12884}
     - Class: 114
-      Script: {instanceID: 13356}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13004}
     - Class: 114
-      Script: {instanceID: 13510}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 14420}
+      Script: {instanceID: 13066}
+    - Class: 114
+      Script: {instanceID: 13216}
+    - Class: 114
+      Script: {instanceID: 13290}
+    - Class: 114
+      Script: {instanceID: 13360}
+    - Class: 114
+      Script: {instanceID: 13392}
+    - Class: 114
+      Script: {instanceID: 13468}
+    - Class: 114
+      Script: {instanceID: 13514}
+    - Class: 114
+      Script: {instanceID: 14934}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
       Script: {instanceID: 0}
-    - Class: 135
+    - Class: 128
       Script: {instanceID: 0}
-    - Class: 136
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -660,6 +688,12 @@ ScriptsOnlyBuild:
     className: ARMeshManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackedImageInfoManager
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -792,11 +826,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 36a9618c1a352c4916548052460abccd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TrackedImageInfoManager
+    className: ToggleInformation
   platform: 13
   scenePathNames:
   - Assets/Scenes/Homocolossus.unity
-  playerPath: C:/Users/Vincent/Downloads/HomoColossus.apk
+  playerPath: /Users/vincent/Desktop/homocolossus.apk

@@ -9,6 +9,7 @@ public class PlacementController : MonoBehaviour
 
     [SerializeField]
     private GameObject placedPrefab;
+    private int counter=0;
 
     public GameObject PlacedPrefab
     {
@@ -49,8 +50,11 @@ public class PlacementController : MonoBehaviour
 
         if(arRaycastManager.Raycast(touchPosition, hits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinPolygon))
         {
-            var hitPose = hits[0].pose;
-            Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+            if(counter<1){
+                var hitPose = hits[0].pose;
+                Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+                counter++;
+            }
         }
     }
 
