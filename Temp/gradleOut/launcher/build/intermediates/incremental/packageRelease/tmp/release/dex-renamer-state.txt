@@ -1,4 +1,0 @@
-#Thu Dec 05 14:41:51 CET 2019
-base.0=/Users/vincent/GitHub/HomoColossus2/Temp/gradleOut/launcher/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex

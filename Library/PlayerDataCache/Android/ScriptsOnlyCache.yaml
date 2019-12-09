@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - PlacementController
+    - PlacementObject
     - ToggleInformation
     - TrackedImageInfoManager
     Unity.XR.ARFoundation.dll:
@@ -32,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Homocolossus.unity:
@@ -54,8 +56,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 64
-      Script: {instanceID: 0}
-    - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -102,19 +102,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13040}
     - Class: 114
-      Script: {instanceID: 13070}
+      Script: {instanceID: 13072}
     - Class: 114
-      Script: {instanceID: 13220}
+      Script: {instanceID: 13160}
     - Class: 114
-      Script: {instanceID: 13294}
+      Script: {instanceID: 13222}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13296}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13472}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 13518}
+      Script: {instanceID: 13474}
+    - Class: 114
+      Script: {instanceID: 13506}
+    - Class: 114
+      Script: {instanceID: 13520}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -484,7 +488,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 36a9618c1a352c4916548052460abccd
+      Hash: a64c9b00fcc167e58e656c15e63e303a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ToggleInformation
@@ -638,6 +642,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: c5050b1280e738bb7d5d392bd348131a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlacementWithManySelectionWithScaleController
   - hash:
       serializedVersion: 2
       Hash: de8c2a257a183731115d08b34b7bd746
@@ -814,7 +824,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: a1f11b786cc0a0131441646ad4b674bf
+      Hash: a2233188f6ce3953790542070ea1ff85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlacementController

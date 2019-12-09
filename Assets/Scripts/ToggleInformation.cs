@@ -7,15 +7,20 @@ using UnityEngine.UI;
 public class ToggleInformation : MonoBehaviour
 {
     public Button btn;
-    bool state = false;
-    void Start(){
-        btn =GetComponent<Button>();
+    public Image image;
+    public bool state = false;
+    void Awake(){
         btn.onClick.AddListener(TaskOnClick);
-	
-    }
+        this.GetComponent<Text>().enabled = state;
+        image.enabled=state;
 
-    void  TaskOnClick(){
+	
+}
+
+    private void  TaskOnClick(){
         state = !state;
-        this.gameObject.SetActive(state);
+        this.GetComponent<Text>().enabled = state;
+        image.enabled=state;
+
     }
 }
